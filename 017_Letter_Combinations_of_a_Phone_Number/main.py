@@ -11,7 +11,6 @@ def backtrack(num: str, i: int, dct: dict, curr_string: str, ans: list):
         curr_string = curr_string[:l-1]
     return ans
 
-
 def fun(digits: str) -> list:
     dct = {2: "abc", 3: "def", 4: "ghi", 5: "jkl", 6: "mno", 7: "pqrs", 8: "tuv", 9: "wxyz"}
     ans = []
