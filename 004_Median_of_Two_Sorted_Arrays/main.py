@@ -1,4 +1,4 @@
-
+# SOLUTION 1
 def fun(num1, num2):
     c = num1 + num2
     c.sort()
@@ -12,4 +12,4 @@ def fun(num1, num2):
         return c[int(d/2)]
 
 
-print(fun([1,3, 15], [2]))
+print(fun([1, 3, 15], [2]))
