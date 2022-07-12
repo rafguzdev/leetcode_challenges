@@ -1,4 +1,19 @@
+# SOLUTION 2
+def fun(s: str) -> int:
+    text = ""
+    m = 0
+    for c in s:
+        if c not in text:
+            text += c
+        else:
+            text = text[text.index(c) + 1:] + c
+        m = max(m, len(text))
+    return m
 
+
+print(fun('abcabcd'))
+
+# SOLUTION 1
 # def fun(s):
 #     length = len(s)
 #     if length < 2:
@@ -23,19 +38,3 @@
 #     return len(a)
 
 # print(fun('abcdabcde'))
-
-def lengthOfLongestSubstring(s: str) -> int:
-    dic = ""
-    m = 0
-    for c in s:
-        if c not in dic:
-            dic += c
-        else:
-            dic = dic[dic.index(c) + 1:] + c
-        m = max(m, len(dic))
-    return m
-
-print(lengthOfLongestSubstring('abcabcd'))
-
-
-[1,2,3,4]
