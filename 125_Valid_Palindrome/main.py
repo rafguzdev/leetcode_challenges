@@ -1,4 +1,4 @@
-#SOLUTION 1
+# SOLUTION 1
 def fun(s):
     i = 0
     j = len(s) - 1
